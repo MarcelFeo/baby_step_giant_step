@@ -1,6 +1,6 @@
 # Baby Step Giant Step Algorithm
 
-Este repositório contém uma implementação do algoritmo Baby Step Giant Step em [inserir linguagem de programação aqui]. O algoritmo Baby Step Giant Step é um método eficiente para resolver o problema do logaritmo discreto em grupos cíclicos finitos, como o grupo multiplicativo de um corpo finito ou o grupo de pontos de uma curva elíptica.
+Este repositório contém uma implementação do algoritmo Baby Step Giant Step em python. O algoritmo Baby Step Giant Step é um método eficiente para resolver o problema do logaritmo discreto em grupos cíclicos finitos, como o grupo multiplicativo de um corpo finito ou o grupo de pontos de uma curva elíptica.
 
 ## Introdução
 
