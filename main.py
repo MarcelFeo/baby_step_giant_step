@@ -26,6 +26,15 @@ def baby_step_giant_step(a, b, p):
     # Calcula o inverso multiplicativo de a^(m)
     inv_a_m = pow(pow(a, m, p), p - 2, p)
 
+    # Giant step: verifica cada possível valor de x e procura um correspondente na tabela de baby steps
+    val = b
+    for j in range(m):
+        if val in baby_steps:
+            return j * m + baby_steps[val]
+        val = (val * inv_a_m) % p
+
+    # Se nenhum correspondente for encontrado, não há solução
+    raise ValueError("Não foi encontrada uma solução")
 
 p = int(input("Digite um número primo: "))
 a = int(input("Digite um gerador do grupo multiplicativo módulo p: "))
